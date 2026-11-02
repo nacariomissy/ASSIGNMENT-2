@@ -1,0 +1,175 @@
+/* Base*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #555555;
+}
+
+/* Site header + nav (body > header)*/
+body > header {
+  background: #555555;
+}
+
+body > header h1 {
+  margin: 0;
+  padding: 12px 0;
+  background: #ffff00;
+  color: #555555;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #ffff00;
+}
+
+/* Banner (main > header) */
+main > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px 30px;
+  min-height: 170px;
+  background-color: #12233f;
+  background-image:
+    linear-gradient(rgba(10, 20, 45, 0.8), rgba(10, 20, 45, 0.8)),
+    url("images/talking_heads-speaking_in_tongues.png");
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+}
+
+#artist_info h1 {
+  margin: 0 0 12px 0;
+  color: #ffff00;
+  font-size: 1.6rem;
+}
+
+#artist_info h2 {
+  margin: 0 0 12px 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+#artist_info h3 {
+  margin: 0;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+#album_cover img {
+  display: block;
+  width: 130px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Two columns: lyrics + about  */
+article {
+  display: flex;
+  gap: 4%;
+  padding: 25px 5%;
+}
+
+#lyrics {
+  flex: 1 1 62%;
+}
+
+#about {
+  flex: 0 0 33%;
+  min-width: 220px;
+  align-self: flex-start;
+  background: #4d4d4d;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+/*  Lyrics*/
+#lyrics h2 {
+  display: inline-block;
+  margin: 15px 0 10px 0;
+  padding: 10px 12px;
+  background: #ffff00;
+  color: #555555;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+#lyrics p {
+  margin: 0 0 20px 0;
+  padding-left: 8px;
+  border-left: 2px solid #dddddd;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #777777;
+}
+
+/* Choruses (2nd and 4th sections) are indented */
+#lyrics section:nth-child(even) {
+  margin-left: 12%;
+}
+
+/*About the song */
+#about h2 {
+  margin: 0 0 12px 0;
+  padding: 12px 15px;
+  background: #ffff00;
+  color: #555555;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#about p {
+  margin: 0 0 12px 0;
+  padding: 0 15px;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+#about blockquote {
+  margin: 0 15px 0 17%;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+#about a {
+  color: #ffff00;
+  text-decoration: none;
+}
+
+/*Footer*/
+footer {
+  margin: 20px 5px 0 5px;
+  padding: 25px 5%;
+  border-top: 4px solid #ffff00;
+  font-size: 0.6rem;
+  color: #777777;
+}
+
+footer a {
+  background: #ffff00;
+  color: #555555;
+  text-decoration: none;
+}
